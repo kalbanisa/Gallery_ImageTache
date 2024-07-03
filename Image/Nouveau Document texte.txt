@@ -1,0 +1,8 @@
+    padding: 120px 0;
+    background-color: #ffda79;
+    text-align: center;
+****grit*
+.pr
+display :gri
+gri tremplate column:repeat(auto fit , mimax 250px)
+

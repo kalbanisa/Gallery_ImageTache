@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Site web du centre */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Ajouter un remplissage ENTRE chaque colonne (si vous le souhaitez) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Créez trois colonnes égales qui flottent l’une à côté de l’autre */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Masquer les colonnes par défaut */
+  }
+  
+  /* Effacer les flottants après les rangées */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /*  La classe « show » est ajoutée aux éléments filtrés */
+  .show {
+    display: block;
+  }
+  
+  /* Styliser les boutons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Ajouter une couleur d’arrière-plan grise au survol de la souris */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /*  Ajouter une couleur d’arrière-plan sombre au bouton actif */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
+   
+    div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    border-radius: 30px;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  /*   
+  width : 10vw;
+  height : 10vh;
+  max-width : 200px;
+  max-height : 150px; */
+  
+   
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+   
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
